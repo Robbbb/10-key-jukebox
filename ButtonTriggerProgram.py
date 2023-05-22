@@ -1,12 +1,10 @@
-#chatGPT wrote this 
 import time
 import os
 import RPi.GPIO as GPIO
 from pygame import mixer
-
+# python /home/pi/critter/ButtonTriggerProgram.py 
 # Audio files
-audio_files = ["audio1.mp3", "audio2.mp3", "audio3.mp3", "audio4.mp3", "audio5.mp3",
-               "audio6.mp3", "audio7.mp3", "audio8.mp3", "audio9.mp3", "audio10.mp3"]
+audio_files = ["/home/pi/critter/audio1.mp3","/home/pi/critter/audio2.mp3","/home/pi/critter/audio3.mp3","/home/pi/critter/audio4.mp3","/home/pi/critter/audio5.mp3","/home/pi/critter/audio6.mp3","/home/pi/critter/audio7.mp3","/home/pi/critter/audio8.mp3","/home/pi/critter/audio9.mp3","/home/pi/critter/audio10.mp3"]
 
 # Button GPIO pins
 button_pins = [4, 17, 27]
@@ -70,9 +68,10 @@ led_states = [False] * len(led_pins)
 print("Boot-up LED test")
 for i, led_pin in enumerate(led_pins):
     GPIO.output(led_pin, GPIO.HIGH)
-    time.sleep(0.5)
+    time.sleep(0.3)
     GPIO.output(led_pin, GPIO.LOW)
-    time.sleep(0.5)
+    # time.sleep(0.5)
+print("DONE!")
 
 # Initialize current_file_index
 current_file_index = -1
