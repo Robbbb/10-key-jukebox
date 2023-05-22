@@ -2,9 +2,9 @@ import time
 import os
 import RPi.GPIO as GPIO
 from pygame import mixer
-# python /home/pi/critter/ButtonTriggerProgram.py 
 # Audio files
-audio_files = ["/home/pi/critter/audio1.mp3","/home/pi/critter/audio2.mp3","/home/pi/critter/audio3.mp3","/home/pi/critter/audio4.mp3","/home/pi/critter/audio5.mp3","/home/pi/critter/audio6.mp3","/home/pi/critter/audio7.mp3","/home/pi/critter/audio8.mp3","/home/pi/critter/audio9.mp3","/home/pi/critter/audio10.mp3"]
+path= "/media/pi/CRITTTER/"
+audio_files = ["/media/pi/CRITTER1/audio1.mp3","/media/pi/CRITTER1/audio2.mp3","/media/pi/CRITTER1/audio3.mp3","/media/pi/CRITTER1/audio4.mp3","/media/pi/CRITTER1/audio5.mp3","/media/pi/CRITTER1/audio6.mp3","/media/pi/CRITTER1/audio7.mp3","/media/pi/CRITTER1/audio8.mp3","/media/pi/CRITTER1/audio9.mp3","/media/pi/CRITTTER/audio10.mp3"]
 
 # Button GPIO pins
 button_pins = [4, 17, 27]
