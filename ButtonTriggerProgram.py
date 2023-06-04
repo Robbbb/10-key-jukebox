@@ -4,13 +4,13 @@ import RPi.GPIO as GPIO
 from pygame import mixer
 # Audio files
 path= "/media/pi/CRITTTER/"
-audio_files = ["/media/pi/CRITTER1/audio1.mp3","/media/pi/CRITTER1/audio2.mp3","/media/pi/CRITTER1/audio3.mp3","/media/pi/CRITTER1/audio4.mp3","/media/pi/CRITTER1/audio5.mp3","/media/pi/CRITTER1/audio6.mp3","/media/pi/CRITTER1/audio7.mp3","/media/pi/CRITTER1/audio8.mp3","/media/pi/CRITTER1/audio9.mp3","/media/pi/CRITTTER/audio10.mp3"]
+audio_files = ["/media/pi/CRITTER1/audio0.mp3","/media/pi/CRITTER1/audio1.mp3","/media/pi/CRITTER1/audio2.mp3","/media/pi/CRITTER1/audio3.mp3","/media/pi/CRITTER1/audio4.mp3","/media/pi/CRITTER1/audio5.mp3","/media/pi/CRITTER1/audio6.mp3","/media/pi/CRITTER1/audio7.mp3","/media/pi/CRITTER1/audio8.mp3","/media/pi/CRITTER1/audio9.mp3"]
 
 # Button GPIO pins
 button_pins = [4,17,27,22,10,9,11,5,6,13]
 
 # LED GPIO pins
-led_pins = [14,15,18,23,24,25,12,15,20,21]
+led_pins = [14,15,18,23,24,25,12,16,20,21]
 
 # GPIO setup
 GPIO.setwarnings(False)
